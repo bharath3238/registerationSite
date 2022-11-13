@@ -19,7 +19,7 @@ options.forEach((option) => option.addEventListener("click", (e) => {
     closepop();
 }))
 
-const apiUri = "http://192.168.42.32:4000/";
+const apiUri = "https://creators637.herokuapp.com/";
 
 const checkMainDetails = () => {
     const username = document.getElementById("musername").value;
