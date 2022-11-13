@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #FAFAFA;
+}
+
+.container .auth {
+    width: 30%;
+    height: 100%;
+    padding: 50px;
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+.container .auth .head {
+    font-family: "Abril Fatface";
+    font-size: 24px;
+}
+
+.container .auth .formContainer {
+    width: 100%;
+    height: max-content;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: "poppins";
+}
+
+.container .auth .formContainer .label {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.container .auth .formContainer .inp {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid rgb(178, 178, 178);
+    border-radius: 10px;
+    font-family: "poppins";
+    padding: 0 15px;
+}
+
+.container .auth .formContainer .btn {
+    margin-top: 30px;
+    height: 40px;
+    background: #0f0f0f;
+    border: none;
+    color: #fff;
+    font-family: "poppins";
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+
+.container .auth .formContainer .note {
+    color: rgb(100, 100, 100);
+    font-size: 11px;
+    margin-top: 30px;
+}
+
+.imgContainer {
+    width: 70%;
+    height: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 100vh;
+}
+
+.container:nth-child(1) {
+    overflow: hidden;
+}
+
+.container:nth-child(1) {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .section {
+    width: 350px;
+    height: 100%;
+    padding: 40px;
+    background-color: rgb(79, 79, 255);
+}
+
+.small,
+.large {
+    color: #fff;
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.container .section .large {
+    font-weight: 600;
+    font-size: 27px;
+    margin-top: 20px;
+    line-height: 140%;
+}
+
+.container .section .card {
+    width: 100%;
+    height: max-content;
+    border: 2px solid rgba(191, 196, 255, 0.545);
+    background-color: rgba(255, 255, 255, 0.275);
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 20px;
+    color: #fff;
+    font-family: "poppins";
+    font-size: 12px;
+}
+
+.container .section .cre {
+    width: 95%;
+    color: rgb(219, 221, 255);
+    font-family: "poppins";
+    font-size: 12px;
+    height: max-content;
+    text-align: right;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.container .section2 {
+    width: calc(100% - 350px);
+    height: 100%;
+    padding: 50px 80px;
+    font-family: "poppins";
+    overflow-y: scroll;
+}
+
+.container .section2 .small {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.container .section2 .form {
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+}
+
+.container .section2 .form .inputContainer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container .section2 .form .inputContainer .dropmenu {
+    width: 150px;
+    height: max-content;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    top: 75px;
+    left: 0;
+    z-index: 2;
+    box-shadow: -5px 5px 20px rgb(231, 231, 231);
+    display: none;
+    overflow: hidden;
+}
+
+.container .section2 .form .inputContainer .dropmenu .option {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container .section2 .form .inputContainer .dropmenu .option:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.container .section2 .form .inputContainer .label {
+    font-size: 13px;
+}
+
+.container .section2 .form .inputContainer .inp {
+    width: 70%;
+    height: 45px;
+    padding: 0 16px;
+    font-family: "poppins";
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.container .section2 .form .inputContainer .inp::placeholder {
+    color: rgb(124, 124, 124);
+}
+
+.container .section2 .form .btn {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "poppins";
+    background-color: rgb(79, 79, 255);
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container .verifyContainer {
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(79, 79, 255);
+    border: 3px solid rgb(179, 179, 255);
+}
+
+.container .verifyContainer .large {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
+.container .verifyContainer .small {
+    width: 350px;
+    font-size: 11px;
+    color: rgb(219, 219, 255);
+    margin-top: 10px;
+}
+
+.container .verifyContainer .code {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.container .verifyContainer .code .box {
+    width: 50px;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px solid rgba(191, 196, 255, 0.545);
+    background-color: rgba(255, 255, 255, 0.275);
+}
+
+.container .verifyContainer .btn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(233, 243, 255);
+    font-family: "poppins";
+    color: rgb(79, 79, 255);
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.flexrow {
+    width: 70%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .section2 .form .flexrow .inputContainer {
+    width: 48%;
+}
+
+.container .section2 .form .flexrow .inputContainer .inp {
+    width: 100%;
+}
+
+.notification {
+    width: max-content;
+    height: max-content;
+    padding: 15px 25px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right: 20px;
+    /* box-shadow: 5px 5px 20px #e4e4e4; */
+    font-family: "poppins";
+    font-size: 12px;
+    transform: translateX(100%);
+    display: none;
+    animation: notify 0.5s ease forwards;
+    border-right: 6px solid rgb(79, 79, 255);
+}
+
+@keyframes notify {
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (max-width: 1264px) {
+    .imgContainer {
+        width: 100%;
+    }
+
+    .container .auth {
+        width: 100%;
+        height: max-content;
+        position: absolute;
+        background-color: #fff;
+    }
+
+    .container:nth-child(1) {
+        flex-direction: column;
+        overflow: visible;
+        height: max-content;
+    }
+
+    .container .section {
+        width: 100%;
+    }
+
+    .container .section2 {
+        width: 100%;
+        padding: 50px;
+        margin-bottom: 20px;
+    }
+
+    .container .section2 .form .inputContainer .inp {
+        width: 100%;
+    }
+
+    .flexrow {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .section2 .form .flexrow .inputContainer {
+        width: 100%;
+    }
+}

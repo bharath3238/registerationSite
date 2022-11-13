@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff registration</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="notification">
+            <p class='ntext'></p>
+        </div>
+        <div class="section">
+            <p class="small">creators</p>
+            <p class="large">Register your self, and start your teaching journey</p>
+            <div class="card">
+                <p class="msg">Register resposibilly, your responce details will be monitored by your head and admin.
+                </p>
+            </div>
+            <p class="cre">~ Admin</p>
+        </div>
+        <div class="section2">
+            <p class="small">Staff Registration</p>
+            <div class="form">
+                <div class="inputContainer">
+                    <label class="label">Username</label>
+                    <input type="text" id="username" class="inp" placeholder="Enter your Full Name">
+                </div>
+                <div class="inputContainer">
+                    <label class="label">Email</label>
+                    <input type="text" id="email" class="inp" placeholder="Enter your Working Email">
+                </div>
+                <div class="inputContainer">
+                    <label class="label">Password</label>
+                    <input type="password" id="password" class="inp" placeholder="Make a Strong Password">
+                </div>
+                <div class="flexrow">
+                    <div class="inputContainer">
+                        <label class="label">Role</label>
+                        <input type="text" class="inp" id="role" placeholder="Select from Drop menu"
+                            onclick="openpop()">
+                        <div class="dropmenu">
+                            <div class="option">Principle</div>
+                            <div class="option">HOD</div>
+                            <div class="option">Staff</div>
+                        </div>
+                    </div>
+                    <div class="inputContainer">
+                        <label class="label">Phone number</label>
+                        <input type="number" class="inp" id="phone" maxlength=10 placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="inputContainer">
+                    <label class="label">Branch</label>
+                    <input type="text" class="inp" id="branch" id="branch" placeholder="Select Branch">
+                </div>
+                <div class="inputContainer">
+                    <label class="label">Institute Name</label>
+                    <input type="text" class="inp" id="inst" placeholder="Your college/community name">
+                </div>
+                <button class="btn" onclick="registerDetails()">Create Account</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
