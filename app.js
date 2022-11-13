@@ -38,7 +38,7 @@ const checkMainDetails = () => {
                     showMessage(data.msg)
                     console.log(data.token)
                     localStorage.setItem("token", data.token);
-                    window.location = "/public/register.html"
+                    window.location = "/register.html"
                 });
             }
         }).catch((error) => null)
@@ -81,5 +81,4 @@ const showMessage = (msg) => {
     notification.getElementsByClassName("ntext")[0].textContent = msg
 }
 
-//gptpendurthi637
-//GptPend637@gOvt#
+
